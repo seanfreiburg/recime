@@ -1,7 +1,17 @@
 SampleApp::Application.routes.draw do
+  get "ingredients/index"
+
+  get "ingredients/show"
+
+  get "ingredients/create"
+
+  get "ingredients/destroy"
+
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
-  resources :microposts, only: [:create, :destroy]
+  resources :recipes, only: [:create, :destroy, :show]
+  resources :shopping_lists, only: [:create, :destroy, :show]
+  resources :ingredients, only: [:create, :destroy, :show, :create_ingredient_user]
   
   root to: 'static_pages#home'
   

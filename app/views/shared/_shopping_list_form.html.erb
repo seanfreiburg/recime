@@ -1,0 +1,12 @@
+<%= form_for(@shopping_list) do |g| %>
+    <%= render 'shared/error_messages', object: g.object %>
+
+    <h2>Add new Shopping List</h2>
+    <div class="field">
+      <%= g.label :name %>
+      <%= g.text_field :name %>
+
+
+    </div>
+    <%= g.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>

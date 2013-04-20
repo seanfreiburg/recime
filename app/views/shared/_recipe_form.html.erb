@@ -1,0 +1,16 @@
+<%= form_for(@recipe) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+
+    <h2>Add new Recipe</h2>
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :prep_time %>
+      <%= f.text_field :prep_time %>
+
+      <%= f.label :description %>
+      <%= f.text_area :description, placeholder: "Compose a description",:size => "20x8" %>
+    </div>
+    <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>

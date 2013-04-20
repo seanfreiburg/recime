@@ -1,0 +1,11 @@
+<li>
+  <span class="content"><%= shopping_list.name %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(shopping_list.created_at) %> ago.
+  </span>
+  <% if current_user?(shopping_list.user) %>
+      <%= link_to "delete", shopping_list, method: :delete,
+                  data: { confirm: "You sure?" },
+                  title: shopping_list.name %>
+  <% end %>
+</li>
