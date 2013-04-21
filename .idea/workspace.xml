@@ -7,7 +7,7 @@
     <ignored path="sql.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366574714897" ignored="false" />
-    <file path="/home.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366576644640" ignored="false" />
+    <file path="/home.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366578052314" ignored="false" />
     <file path="/_footer.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366343857693" ignored="false" />
     <file path="/_header.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366343886950" ignored="false" />
     <file path="/user.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366575883204" ignored="false" />
@@ -63,7 +63,7 @@
       <file leaf-file-name="home.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="26" selection-start="729" selection-end="729" vertical-scroll-proportion="0.45961002">
+            <state line="40" column="28" selection-start="856" selection-end="856" vertical-scroll-proportion="0.5849582">
               <folding />
             </state>
           </provider>
@@ -864,7 +864,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="26" selection-start="729" selection-end="729" vertical-scroll-proportion="0.45961002">
+        <state line="40" column="28" selection-start="856" selection-end="856" vertical-scroll-proportion="0.5849582">
           <folding />
         </state>
       </provider>

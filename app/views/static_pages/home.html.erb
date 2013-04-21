@@ -38,7 +38,7 @@
               <% for ingredient in @ingredients %>
                   <li>
 
-                    <p><%= image_tag(ingredient.picture, :size => "50x50") %></p>
+                    <p><%= #image_tag(ingredient.picture, :size => "50x50") %></p>
 
                     <p><%= ingredient.name %>,
                       Amount: <%= @user.ingredient_users.find_by_ingredient_id(ingredient.id).amount %> <%= link_to 'Delete', ingredient_path(ingredient), :method => :delete, :class => 'btn btn-danger', :confirm => "Are you sure?" %> </p>
