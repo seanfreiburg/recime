@@ -35,6 +35,8 @@ class IngredientsController < ApplicationController
       @ingredient = existing_ingredient
     end
     @ingredient.save
+
+
     existing_ingredient_user = IngredientUser.where("ingredient_id = '#{@ingredient.id}' AND user_id = '#{current_user.id}'").first
     @ingredient_user = IngredientUser.new(:user_id => current_user.id, :ingredient_id => @ingredient.id, :amount => params[:amount])
     if !existing_ingredient_user.nil?
@@ -48,6 +50,38 @@ class IngredientsController < ApplicationController
       render 'static_pages/home'
     end
   end
+
+
+  def new_ingredient_recipe
+    @ingredient = Ingredient.new
+  end
+
+  def create_ingredient_recipe
+    @ingredient = Ingredient.new
+    @ingredient.name = params[:name]
+    @ingredient.picture = params[:picture]
+    existing_ingredient = Ingredient.find_by_name(params[:name])
+    if !existing_ingredient.nil?
+      @ingredient = existing_ingredient
+    end
+    @ingredient.save
+
+    existing_ingredient_recipe = IngredientRecipe.where("ingredient_id = '#{@ingredient.id}' AND recipe_id = '#{params[:id]}'").first
+    @ingredient_recipe = IngredientRecipe.new(:ingredient_id => @ingredient.id, :amount => params[:amount], :recipe_id => params[:id])
+    if !existing_ingredient_recipe.nil?
+      @ingredient_recipe = existing_ingredient_recipe
+      existing_ingredient_recipe.amount += params[:amount].to_i
+    end
+    if @ingredient_recipe.save
+      flash[:success] = "Ingredient added"
+      redirect_to recipe_path(params[:id])
+    else
+      render 'static_pages/home'
+    end
+
+
+  end
+
 
   def destroy
     @ingredient.destroy

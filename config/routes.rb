@@ -25,6 +25,7 @@ SampleApp::Application.routes.draw do
   match '/contact', to: 'static_pages#contact'
   match '/add_ingredient', to: 'ingredients#new_ingredient_user'
   match '/users/create_ingredient_user', to: 'ingredients#create_ingredient_user'
+  match '/ingredients/create_ingredient_recipe', to: 'ingredients#create_ingredient_recipe'
   
 
   # The priority is based upon order of creation:

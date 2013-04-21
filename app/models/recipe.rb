@@ -3,4 +3,8 @@ class Recipe < ActiveRecord::Base
 
   belongs_to :user
   validates :user_id, presence: true
+
+
+  has_many :ingredients, :through => :ingredient_recipes
+  has_many :ingredient_recipes, dependent:  :destroy
 end
