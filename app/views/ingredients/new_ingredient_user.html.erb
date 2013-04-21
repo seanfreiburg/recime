@@ -1,0 +1,22 @@
+
+<h1>Add Ingredient</h1>
+
+
+<%= form_tag("/users/create_ingredient_user", :method => "post") do %>
+    <p>
+      Name:
+      <%= text_field_tag  :name %>
+    </p>
+
+    <p>
+      Picture Link:
+      <%= text_field_tag :picture_link %>
+    </p>
+    <p>
+      Amount
+      <%= text_field_tag :amount %>
+    </p>
+    <p>
+      <%= submit_tag 'Create' %>
+    </p>
+<% end %>

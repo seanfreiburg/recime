@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @recipes = @user.recipes.paginate(page: params[:page])
+    @ingredients = @user.ingredients
   end
 
   def new

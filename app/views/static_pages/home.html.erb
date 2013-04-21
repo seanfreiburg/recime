@@ -27,6 +27,30 @@
         <% end %>
 
       </div>
+
+      <div class="span4">
+        <% if @user.ingredients.any? %>
+            <h3>Ingredients (<%= @user.ingredients.count %>)</h3>
+            <ol>
+
+              <% for ingredient in @ingredients %>
+                  <li>
+                    <span class="content"><%= ingredient.name %></span>
+                    <span class="content"><%= ingredient.picture %></span>
+
+                    <p>Amount : <%= @user.ingredient_users.find_by_ingredient_id(ingredient.id).amount %> </p>
+             <span class="timestamp">
+                Posted <%= time_ago_in_words(ingredient.created_at) %> ago.
+            </span>
+
+                  </li>
+
+              <% end %>
+
+            </ol>
+        <% end %>
+      </div>
+      <%= link_to "Add to Inventory", '/add_ingredient' %>
     </div>
 <% else %>
     <div class="center hero-unit">
