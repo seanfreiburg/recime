@@ -3,5 +3,5 @@ class Ingredient < ActiveRecord::Base
 
 
   has_many :ingredients, :through => :ingredient_users
-  has_many :ingredient_users
+  has_many :ingredient_users, dependent: :destroy
 end

@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   has_many :recipes, dependent: :destroy
   has_many :shopping_lists, dependent: :destroy
   has_many :ingredients, :through => :ingredient_users
-  has_many :ingredient_users
+  has_many :ingredient_users, dependent: :destroy
 
 
   before_save { self.email.downcase! }

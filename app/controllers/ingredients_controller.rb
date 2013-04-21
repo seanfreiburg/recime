@@ -35,8 +35,8 @@ class IngredientsController < ApplicationController
       @ingredient = existing_ingredient
     end
     @ingredient.save
-    existing_ingredient_user = IngredientUser.where("ingredient_id = '#{@ingredient.id}' AND user_id = '#{params[:user_id]}'").first
-    @ingredient_user = IngredientUser.new(:user_id => current_user, :ingredient_id => @ingredient.id, :amount => params[:amount])
+    existing_ingredient_user = IngredientUser.where("ingredient_id = '#{@ingredient.id}' AND user_id = '#{current_user.id}'").first
+    @ingredient_user = IngredientUser.new(:user_id => current_user.id, :ingredient_id => @ingredient.id, :amount => params[:amount])
     if !existing_ingredient_user.nil?
       @ingredient_user = existing_ingredient_user
       existing_ingredient_user.amount += params[:amount].to_i
