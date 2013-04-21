@@ -5,8 +5,8 @@
           <%= render 'shared/user_info' %>
         </section>
       </aside>
-      <div class="span4"><%= render 'shared/recipe_form' %></div>
-      <div class="span4"><%= render 'shared/shopping_list_form' %></div>
+
+
     </div>
 
     <div class="row">
@@ -16,6 +16,8 @@
 
             <li><%= link_to item.name, item %></li>
         <% end %>
+        <br>
+        <%= render 'shared/recipe_form' %>
 
       </div>
 
@@ -25,30 +27,34 @@
 
             <li><%= link_to list.name, list %></li>
         <% end %>
-
+        <br>
+        <%= render 'shared/shopping_list_form' %>
       </div>
 
       <div class="span4">
         <% if @user.ingredients.any? %>
-            <h3>Inventory  (<%= @user.ingredients.count %>)</h3>
+            <h3>Inventory (<%= @user.ingredients.count %>)</h3>
             <ol>
 
               <% for ingredient in @ingredients %>
                   <li>
 
                     <p><%= image_tag(ingredient.picture, :size => "50x50") %></p>
-                    <p><%= ingredient.name %>, Amount: <%= @user.ingredient_users.find_by_ingredient_id(ingredient.id).amount %> <%= link_to 'Delete', ingredient_path(ingredient), :method => :delete , :class => 'btn btn-danger', :confirm => "Are you sure?"%> </p>
+
+                    <p><%= ingredient.name %>,
+                      Amount: <%= @user.ingredient_users.find_by_ingredient_id(ingredient.id).amount %> <%= link_to 'Delete', ingredient_path(ingredient), :method => :delete, :class => 'btn btn-danger', :confirm => "Are you sure?" %> </p>
                   </li>
-
-
 
 
               <% end %>
 
             </ol>
         <% end %>
+
+
+        <%= link_to "Add to Inventory", '/add_ingredient', :class => 'btn btn-primary' %>
       </div>
-      <%= link_to "Add to Inventory", '/add_ingredient', :class => 'btn btn-primary' %>
+
     </div>
 <% else %>
     <div class="center hero-unit">
