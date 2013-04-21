@@ -32,7 +32,6 @@
       </div>
 
       <div class="span4">
-        <% if @user.ingredients.any? %>
             <h3>Inventory (<%= @user.ingredients.count %>)</h3>
             <ol>
 
@@ -49,7 +48,6 @@
               <% end %>
 
             </ol>
-        <% end %>
 
 
         <%= link_to "Add to Inventory", '/add_ingredient', :class => 'btn btn-primary' %>
