@@ -1,0 +1,18 @@
+
+
+
+  <% for recipe in @recipes %>
+
+        <span class="content"><%= link_to recipe.name,recipe, :class => 'btn' %>
+
+        <% if current_user?(recipe.user) %>
+            <%= link_to "delete", recipe, method: :delete,
+                        data: {confirm: "You sure?"},
+                        title: recipe.name,
+                        :class => 'btn btn-danger'%>
+        <% end %>
+          </span>
+      <br>
+
+  <% end %>
+

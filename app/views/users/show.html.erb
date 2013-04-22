@@ -31,6 +31,7 @@
             <span class="content"><%= ingredient.picture %></span>
 
             <p>Amount : <%= @user.ingredient_users.find_by_ingredient_id(ingredient.id).amount %> </p>
+            <p>Exp Date :  <%= @user.ingredient_users.find_by_ingredient_id(ingredient.id).exp_date %> </p>
              <span class="timestamp">
                 Posted <%= time_ago_in_words(ingredient.created_at) %> ago.
             </span>

@@ -38,7 +38,7 @@ class IngredientsController < ApplicationController
 
 
     existing_ingredient_user = IngredientUser.where("ingredient_id = '#{@ingredient.id}' AND user_id = '#{current_user.id}'").first
-    @ingredient_user = IngredientUser.new(:user_id => current_user.id, :ingredient_id => @ingredient.id, :amount => params[:amount])
+    @ingredient_user = IngredientUser.new(:user_id => current_user.id, :ingredient_id => @ingredient.id, :amount => params[:amount], :exp_date =>params[:date])
     if !existing_ingredient_user.nil?
       @ingredient_user = existing_ingredient_user
       existing_ingredient_user.amount += params[:amount].to_i
@@ -81,6 +81,9 @@ class IngredientsController < ApplicationController
 
 
   end
+
+
+
 
 
   def destroy

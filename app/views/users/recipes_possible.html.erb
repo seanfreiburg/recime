@@ -1,0 +1,11 @@
+
+<h1>Recipes you can make </h1>
+
+<% for recipe in @recipes %>
+
+    <span class="content"><%= link_to recipe.name,recipe, :class => 'btn' %>
+
+          </span>
+    <br>
+
+<% end %>

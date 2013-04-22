@@ -1,12 +1,15 @@
 
+
+
 <h1><%= @recipe.name %></h1>
+<div class="span12">
 <h3>Prep Time: </h3><p><%= @recipe.prep_time %></p>
 <h3> Directions: </h3><p><%= @recipe.description%></p>
 
 
-<div class="span4">
+
   <% if @ingredients %>
-      <h3>Inventory (<%= @recipe.ingredients.count %>)</h3>
+      <h3>Ingredients (<%= @recipe.ingredients.count %>)</h3>
       <ol>
 
         <% for ingredient in @ingredients %>

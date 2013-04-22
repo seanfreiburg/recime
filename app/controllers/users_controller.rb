@@ -47,6 +47,28 @@ class UsersController < ApplicationController
     User.find(params[:id]).destroy
     flash[:success] = "User destroyed."
     redirect_to users_url
+   end
+
+
+  def recipes_possible
+    @ings = current_user.ingredients.all(:joins => [:ingredient_recipes])
+    @recipes_list = Recipe.all
+    @recipes = Array.new
+    for ing in @ings
+      for recipe in @recipes_list
+        if recipe.ingredients.include?(ing)
+          for ring in recipe.ingredients
+            if @ings.include?(ring)
+              @recipes.append(recipe)
+            end
+          end
+
+        end
+      end
+    end
+
+    @recipes = @recipes.uniq
+
   end
 
   private

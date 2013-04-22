@@ -9,7 +9,7 @@ SampleApp::Application.routes.draw do
 
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
-  resources :recipes, only: [:create, :destroy, :show]
+  resources :recipes, only: [:create, :destroy, :show, :index]
   resources :shopping_lists, only: [:create, :destroy, :show]
   resources :ingredients, only: [:create, :destroy, :show]
   
@@ -26,6 +26,7 @@ SampleApp::Application.routes.draw do
   match '/add_ingredient', to: 'ingredients#new_ingredient_user'
   match '/users/create_ingredient_user', to: 'ingredients#create_ingredient_user'
   match '/ingredients/create_ingredient_recipe', to: 'ingredients#create_ingredient_recipe'
+  match '/recipes_possible', to: 'users#recipes_possible'
   
 
   # The priority is based upon order of creation:
