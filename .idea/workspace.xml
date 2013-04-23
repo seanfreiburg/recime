@@ -34,7 +34,7 @@
     <file path="/README.md" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366574735881" ignored="false" />
     <file path="/new_ingredient_recipe.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366579872580" ignored="false" />
     <file path="/ingredient_recipe.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366582459886" ignored="false" />
-    <file path="/seeds.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366682735716" ignored="false" />
+    <file path="/seeds.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366682996331" ignored="false" />
     <file path="/application.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366658192190" ignored="false" />
     <file path="/20130422192807_add_exp_date_to_user_ingredient.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366658951963" ignored="false" />
     <file path="/index.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366663478761" ignored="false" />
@@ -64,7 +64,7 @@
       <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="107" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.3576159">
+            <state line="20" column="116" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.397351">
               <folding />
             </state>
           </provider>
@@ -905,7 +905,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="107" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.3576159">
+        <state line="20" column="116" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.397351">
           <folding />
         </state>
       </provider>

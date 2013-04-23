@@ -17,6 +17,8 @@ User.create( email: 'bob@gmail.com', name: 'Bob', password: 'blah1234', password
 User.create( email: 'will@gmail.com', name: 'Will', password: 'blah1234', password_confirmation:'blah1234')
 User.create( email: 'mary@gmail.com', name: 'Mary', password: 'blah1234', password_confirmation:'blah1234')
 User.create( email: 'knsofor@gmail.com', name: 'Kenny', password: 'awesome', password_confirmation:'awesome')
+User.create( email: 'knsofor@gmail.com', name: 'Kenny', password: 'awesome', password_confirmation:'awesome')
+User.create( email: 'c23mtz@gmail.com', name: 'Cesar Martinez', password: 'cvmpass', password_confirmation: 'cvmpass')
 
 @users = User.all
 
