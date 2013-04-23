@@ -25,4 +25,8 @@ class StaticPagesController < ApplicationController
   def trololo
 
   end
+
+  def report
+
+  end
 end

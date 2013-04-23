@@ -27,6 +27,7 @@ SampleApp::Application.routes.draw do
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
   match '/trololo', to: 'static_pages#trololo'
+  match '/report', to: 'static_pages#report'
   match '/add_ingredient', to: 'ingredients#new_ingredient_user'
   match '/users/create_ingredient_user', to: 'ingredients#create_ingredient_user'
   match '/ingredients/create_ingredient_recipe', to: 'ingredients#create_ingredient_recipe'
