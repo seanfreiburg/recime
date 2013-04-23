@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  get "ingredient_users/destroy"
+
   get "ingredients/index"
 
   get "ingredients/show"
@@ -12,6 +14,7 @@ SampleApp::Application.routes.draw do
   resources :recipes, only: [:create, :destroy, :show, :index]
   resources :shopping_lists, only: [:create, :destroy, :show]
   resources :ingredients, only: [:create, :destroy, :show]
+  resources :ingredient_users, only: [:destroy]
   
   root to: 'static_pages#home'
   
@@ -27,7 +30,7 @@ SampleApp::Application.routes.draw do
   match '/users/create_ingredient_user', to: 'ingredients#create_ingredient_user'
   match '/ingredients/create_ingredient_recipe', to: 'ingredients#create_ingredient_recipe'
   match '/recipes_possible', to: 'users#recipes_possible'
-  
+  match '/recipes_expiring', to: 'users#recipes_exp'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -71,6 +71,26 @@ class UsersController < ApplicationController
 
   end
 
+  def recipes_exp
+    @ings = current_user.ingredients.all(:joins => [:ingredient_recipes], :order => "exp_date ASC")
+    @recipes_list = Recipe.all
+    @recipes = Array.new
+    for ing in @ings
+      for recipe in @recipes_list
+        if recipe.ingredients.include?(ing)
+          for ring in recipe.ingredients
+            if @ings.include?(ring)
+              @recipes.append(recipe)
+            end
+          end
+
+        end
+      end
+    end
+
+    @recipes = @recipes.uniq
+  end
+
   private
 
 
