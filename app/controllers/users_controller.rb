@@ -83,11 +83,9 @@ class UsersController < ApplicationController
               @recipes.append(recipe)
             end
           end
-
         end
       end
     end
-
     @recipes = @recipes.uniq
   end
 

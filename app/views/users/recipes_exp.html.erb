@@ -1,9 +1,9 @@
 
 <h1>Recipes you can make in order of expiring ingredients </h1>
-
+<% x =0 %>
 <% for recipe in @recipes %>
 
-    <span class="content"><%= link_to recipe.name,recipe, :class => 'btn' %>
+    <span class="content"><%=x = x+1 %>. <%= link_to recipe.name,recipe, :class => 'btn' %>
 
           </span>
     <br>

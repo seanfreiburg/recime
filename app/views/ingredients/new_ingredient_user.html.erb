@@ -4,21 +4,18 @@
 
 <%= form_tag("/users/create_ingredient_user", :method => "post") do %>
     <p>
-      Name:
+      <%= label_tag :name %>
       <%= text_field_tag  :name %>
     </p>
 
     <p>
-      Picture Link:
-      <%= text_field_tag :picture %>
-    </p>
-    <p>
-      Amount
+      <%= label_tag :amount %>
       <%= text_field_tag :amount %>
     </p>
 
     <p>
-      <%= label_tag :date %>
+      <%= label_tag :date %> <small>Format is YYYY/MM/DD </small>
+
         <%= text_field_tag :date %>
     </p>
     <p>

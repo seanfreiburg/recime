@@ -29,7 +29,7 @@ class IngredientsController < ApplicationController
   def create_ingredient_user
     @ingredient = Ingredient.new
     @ingredient.name = params[:name]
-    @ingredient.picture = params[:picture]
+    @ingredient.picture = image_search(params[:name])
     existing_ingredient = Ingredient.find_by_name(params[:name])
     if !existing_ingredient.nil?
       @ingredient = existing_ingredient
@@ -59,7 +59,7 @@ class IngredientsController < ApplicationController
   def create_ingredient_recipe
     @ingredient = Ingredient.new
     @ingredient.name = params[:name]
-    @ingredient.picture = params[:picture]
+    @ingredient.picture = image_search(params[:name])
     existing_ingredient = Ingredient.find_by_name(params[:name])
     if !existing_ingredient.nil?
       @ingredient = existing_ingredient
@@ -87,7 +87,7 @@ class IngredientsController < ApplicationController
   def create_ingredient_shopping_list
     @ingredient = Ingredient.new
     @ingredient.name = params[:name]
-    @ingredient.picture = params[:picture]
+    @ingredient.picture = image_search(params[:name])
     existing_ingredient = Ingredient.find_by_name(params[:name])
     if !existing_ingredient.nil?
       @ingredient = existing_ingredient
@@ -123,6 +123,9 @@ class IngredientsController < ApplicationController
     @ingredient = current_user.ingredients.find_by_id(params[:id])
     redirect_to root_url if @ingredient.nil?
   end
+
+
+
 end
 
 
