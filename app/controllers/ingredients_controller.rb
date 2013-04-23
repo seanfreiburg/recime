@@ -78,10 +78,35 @@ class IngredientsController < ApplicationController
     else
       render 'static_pages/home'
     end
-
-
   end
 
+  def new_ingredient_shopping_list
+    @ingredient = Ingredient.new
+  end
+
+  def create_ingredient_shopping_list
+    @ingredient = Ingredient.new
+    @ingredient.name = params[:name]
+    @ingredient.picture = params[:picture]
+    existing_ingredient = Ingredient.find_by_name(params[:name])
+    if !existing_ingredient.nil?
+      @ingredient = existing_ingredient
+    end
+    @ingredient.save
+
+    existing_ingredient_shopping_list = IngredientShoppingList.where("ingredient_id = '#{@ingredient.id}' AND shopping_list_id = '#{params[:id]}'").first
+    @ingredient_shopping_list = IngredientShoppingList.new(:ingredient_id => @ingredient.id, :amount => params[:amount], :shopping_list_id => params[:id])
+    if !existing_ingredient_shopping_list.nil?
+      @ingredient_shopping_list = existing_ingredient_shopping_list
+      existing_ingredient_shopping_list.amount += params[:amount].to_i
+    end
+    if @ingredient_shopping_list.save
+      flash[:success] = "Ingredient added"
+      redirect_to shopping_list_path(params[:id])
+    else
+      render 'static_pages/home'
+    end
+  end
 
 
 

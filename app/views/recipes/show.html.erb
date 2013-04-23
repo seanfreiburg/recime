@@ -18,7 +18,7 @@
               <p><%= image_tag(ingredient.picture, :size => "50x50") %></p>
 
               <p><%= ingredient.name %>,
-                Amount: <%= @recipe.ingredient_recipes.find_by_ingredient_id(ingredient.id).amount %> <%= link_to 'Delete', ingredient_path(ingredient), :method => :delete, :class => 'btn btn-danger', :confirm => "Are you sure?" %> </p>
+                Amount: <%= @recipe.ingredient_recipes.find_by_ingredient_id(ingredient.id).amount %>  <%= link_to('Delete', ingredient_path(ingredient), :method => :delete, :class => 'btn btn-danger', :confirm => "Are you sure?")  %> </p>
             </li>
 
 
@@ -30,11 +30,11 @@
 <h1>Add Ingredient</h1>
 
 
-<%= form_tag("/ingredients/create_ingredient_recipe", :method => "post") do %>
-    <p>
-      Name:
-      <%= text_field_tag  :name %>
-    </p>
+    <%= form_tag("/ingredients/create_ingredient_recipe", :method => "post") do %>
+        <p>
+        Name:
+        <%= text_field_tag  :name %>
+        </p>
 
     <p>
       Picture Link:
@@ -48,6 +48,6 @@
     <p>
       <%= submit_tag 'Create' %>
     </p>
-<% end %>
+    <% end %>
 
 

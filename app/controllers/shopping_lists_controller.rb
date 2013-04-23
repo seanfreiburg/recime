@@ -10,6 +10,7 @@ class ShoppingListsController < ApplicationController
 
   def show
     @shopping_list = ShoppingList.find_by_id(params[:id])
+    @ingredients = @shopping_list.ingredients
   end
 
   def create

@@ -3,4 +3,8 @@ class ShoppingList < ActiveRecord::Base
 
   belongs_to :user
   validates :user_id, presence: true
+
+
+  has_many :ingredients, :through => :ingredient_shopping_lists
+  has_many :ingredient_shopping_lists, dependent: :destroy
 end
