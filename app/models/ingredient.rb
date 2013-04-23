@@ -9,5 +9,5 @@ class Ingredient < ActiveRecord::Base
   has_many :ingredient_recipes, dependent:  :destroy
 
   has_many :shopping_lists, :through => :ingredient_shopping_lists
-  has_many :ingredient_shopping_lists, dependent: :destroy
+  has_many :ingredient_shopping_lists
 end
