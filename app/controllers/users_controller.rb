@@ -71,7 +71,15 @@ class UsersController < ApplicationController
   end
 
   def recipes_exp
+    date = Date.today
     @ings = current_user.ingredients.all(:joins => [:ingredient_recipes], :order => "exp_date ASC")
+    temp = Array.new
+    for ing in @ings
+      if ((current_user.ingredient_users.find_by_ingredient_id(ing.id).exp_date - date) < 14)
+        temp << ing
+      end
+    end
+    @ings = temp
     @recipes_list = Recipe.all
     @recipes = Array.new
     for ing in @ings
@@ -87,6 +95,24 @@ class UsersController < ApplicationController
     end
     @recipes = @recipes.uniq
 
+
+  end
+
+  def ingredients_exp
+    @user = current_user
+    date = Date.today
+    @ings = current_user.ingredients.all( :order => "exp_date ASC")
+    @temp = Array.new
+    for ing in @ings
+      diff =  current_user.ingredient_users.find_by_ingredient_id(ing.id).exp_date - date
+      if diff <= 14
+        @temp.push(ing)
+      end
+    end
+
+    @ings = @temp.dup
+    @ings = @ings.uniq
+    @date = date
 
   end
 

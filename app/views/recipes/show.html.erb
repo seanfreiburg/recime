@@ -55,7 +55,7 @@
 
   <% if current_user?(@recipe.user) %>
       <h1>Add Ingredient</h1>
-
+      <%= form_tag("/ingredients/create_ingredient_recipe", :method => "post") do %>
 
 
           <p>
@@ -71,20 +71,22 @@
           <p>
             <%= submit_tag 'Create' %>
           </p>
+
+          <% end %>
       <% end %>
 
+  <h1>Add Review</h1>
 
-
-
-<h1>Add Review</h1>
-
-<%= form_tag("/create_review", :method => "post") do %>
-    <p>Rating: Enter a value between 1 and 5</p>
-    <%= text_field_tag :rating%>
-    <p>Description</p>
-    <%= text_area_tag :description %>
+  <%= form_tag("/create_review", :method => "post") do %>
+      <p>Rating: Enter a value between 1 and 5</p>
+      <%= text_field_tag :rating%>
+      <p>Description</p>
+      <%= text_area_tag :description %>
       <%= hidden_field_tag 'id', params[:id] %>
-    <%= submit_tag 'Create' %>
+      <%= submit_tag 'Create' %>
 
 
-<% end %>
+  <% end %>
+
+
+  </div>

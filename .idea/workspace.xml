@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/review.rb" afterPath="$PROJECT_DIR$/app/models/review.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/ingredients_exp.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/recipes/show.html.erb" afterPath="$PROJECT_DIR$/app/views/recipes/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sql.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366574714897" ignored="false" />
-    <file path="/home.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366761668688" ignored="false" />
+    <file path="/home.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366831315333" ignored="false" />
     <file path="/_footer.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366684798111" ignored="false" />
     <file path="/_header.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366663345584" ignored="false" />
     <file path="/user.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366575883204" ignored="false" />
     <file path="/recipe.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366771957709" ignored="false" />
     <file path="/recipes_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366774199351" ignored="false" />
-    <file path="/routes.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366772904948" ignored="false" />
-    <file path="/show.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366774837634" ignored="false" />
-    <file path="/users_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366770541291" ignored="false" />
+    <file path="/routes.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366830171055" ignored="false" />
+    <file path="/show.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366829688978" ignored="false" />
+    <file path="/users_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366831999105" ignored="false" />
     <file path="/_recipes.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366344792966" ignored="false" />
     <file path="/_recipe_form.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366346534313" ignored="false" />
     <file path="/static_pages_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366684707727" ignored="false" />
@@ -54,6 +56,7 @@
     <file path="/review.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366774589754" ignored="false" />
     <file path="/reviews_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366773366962" ignored="false" />
     <file path="/20130424031423_add_user_id_to_reviews.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366773315709" ignored="false" />
+    <file path="/ingredients_exp.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366832096553" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,37 +76,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="review.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/review.rb">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="42" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
+            <state line="113" column="22" selection-start="2627" selection-end="2627" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
+      <file leaf-file-name="ingredients_exp.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/ingredients_exp.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="25" selection-start="113" selection-end="113" vertical-scroll-proportion="-1.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reviews_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="25" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/recipes/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="44" selection-start="1817" selection-end="1817" vertical-scroll-proportion="1.6969274">
+            <state line="5" column="12" selection-start="123" selection-end="123" vertical-scroll-proportion="0.10474861">
               <folding />
             </state>
           </provider>
@@ -127,22 +112,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/ingredient_recipes_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/ingredient_shopping_lists_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/shopping_lists/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/ingredients/new_ingredient_user.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/recipes_possible.html.erb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/recipe.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/shopping_list.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130424031423_add_user_id_to_reviews.rb" />
         <option value="$PROJECT_DIR$/app/controllers/recipes_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/review.rb" />
         <option value="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/recipes/show.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/ingredients_exp.html.erb" />
       </list>
     </option>
   </component>
@@ -738,7 +723,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.252518" sideWeight="0.6709347" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26115108" sideWeight="0.6709347" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -815,20 +800,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/shopping_lists/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="355" selection-start="703" selection-end="703" vertical-scroll-proportion="0.35614526">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ingredients/new_ingredient_user.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="0.41152263">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/recipes_possible.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="92" selection-start="167" selection-end="167" vertical-scroll-proportion="-3.125">
@@ -853,20 +824,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/recipe.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="3" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="4" selection-start="2029" selection-end="2029" vertical-scroll-proportion="1.7729083">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="38" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -906,13 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="25" selection-start="113" selection-end="113" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="25" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
@@ -922,7 +872,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/recipes/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="44" selection-start="1817" selection-end="1817" vertical-scroll-proportion="1.6969274">
+        <state line="57" column="57" selection-start="1432" selection-end="1432" vertical-scroll-proportion="1.1941341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="25" selection-start="590" selection-end="590" vertical-scroll-proportion="-16.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="59" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.9561753">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="90" selection-start="502" selection-end="502" vertical-scroll-proportion="0.31424582">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="22" selection-start="2627" selection-end="2627" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/ingredients_exp.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="12" selection-start="123" selection-end="123" vertical-scroll-proportion="0.10474861">
           <folding />
         </state>
       </provider>

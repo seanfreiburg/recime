@@ -46,6 +46,7 @@ SampleApp::Application.routes.draw do
   match '/ingredients/create_ingredient_shopping_list', to: 'ingredients#create_ingredient_shopping_list'
   match '/recipes_possible', to: 'users#recipes_possible'
   match '/recipes_expiring', to: 'users#recipes_exp'
+  match '/ingredients_expiring', to: 'users#ingredients_exp'
   match '/create_review', to: 'reviews#create'
 
   # The priority is based upon order of creation:

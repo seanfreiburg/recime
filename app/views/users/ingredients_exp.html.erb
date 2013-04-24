@@ -1,0 +1,21 @@
+<div class="span12">
+  <h3>Ingredients expiring in next 2 weeks</h3>
+
+  <ol>
+    <% for ingredient in @ings %>
+        <br>
+        <li>
+
+          <p><%= image_tag(ingredient.picture, :size => "50x50") %></p>
+
+          <p><%= ingredient.name %>,
+            Amount: <%= @user.ingredient_users.find_by_ingredient_id(ingredient.id).amount %> <%= link_to 'Delete', ingredient_user_path(ingredient), :method => :delete, :class => 'btn btn-danger', :confirm => "Are you sure?" %> </p>
+          <p>Exp Date :  <%= @user.ingredient_users.find_by_ingredient_id(ingredient.id).exp_date %> </p>
+        </li>
+
+
+    <% end %>
+
+  </ol>
+
+</div>
