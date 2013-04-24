@@ -79,7 +79,7 @@
 <h1>Add Review</h1>
 
 <%= form_tag("/create_review", :method => "post") do %>
-    <p>Rating</p>
+    <p>Rating: Enter a value between 1 and 5</p>
     <%= text_field_tag :rating%>
     <p>Description</p>
     <%= text_area_tag :description %>

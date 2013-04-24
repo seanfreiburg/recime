@@ -6,7 +6,7 @@ class ReviewsController < ApplicationController
       flash[:success] = "review created!"
       redirect_to @recipe
     else
-      render 'static_pages/home'
+      redirect_to @recipe
     end
   end
 
