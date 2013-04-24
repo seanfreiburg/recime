@@ -18,7 +18,7 @@
               <p><%= image_tag(ingredient.picture, :size => "50x50") %></p>
 
               <p><%= ingredient.name %>,
-                Amount: <%= @recipe.ingredient_recipes.find_by_ingredient_id(ingredient.id).amount %>  <%= link_to('Delete', ingredient_path(ingredient), :method => :delete, :class => 'btn btn-danger', :confirm => "Are you sure?")  %> </p>
+                Amount: <%= @recipe.ingredient_recipes.find_by_ingredient_id(ingredient.id).amount %>  <%= link_to 'Delete', ingredient_recipe_path(@recipe,:ingredient_id => ingredient.id  ), :method => :post , :class => 'btn btn-danger', :confirm => "Are you sure?" %> </p> </p>
             </li>
 
 

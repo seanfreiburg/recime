@@ -1,4 +1,9 @@
 SampleApp::Application.routes.draw do
+  match "/ingredient_recipes/:id", to: 'ingredient_recipes#destroy'
+  match "/ingredient_shopping_lists/:id", to: 'ingredient_shopping_lists#destroy'
+
+  get "ingredient_shopping_lists/destroy"
+
   get "ingredient_users/destroy"
 
   get "ingredients/index"
@@ -15,6 +20,8 @@ SampleApp::Application.routes.draw do
   resources :shopping_lists, only: [:create, :destroy, :show]
   resources :ingredients, only: [:create, :destroy, :show]
   resources :ingredient_users, only: [:destroy]
+  resources :ingredient_recipes, only: [:destroy]
+  resources :ingredient_shopping_lists, only: [:destroy]
   
   root to: 'static_pages#home'
   

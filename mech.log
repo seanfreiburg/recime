@@ -1990,3 +1990,277 @@ Read 1404 bytes (161049 total)
 Read 2808 bytes (163857 total)
 Read 2808 bytes (166665 total)
 Read 3984 bytes (170649 total)
+Net::HTTP::Get: /imghp?hl=en&tab=ii
+request-header: accept => */*
+request-header: user-agent => Mechanize/2.6.0 Ruby/1.9.3p392 (http://github.com/sparklemotion/mechanize/)
+request-header: accept-encoding => gzip,deflate,identity
+request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+request-header: accept-language => en-us,en;q=0.5
+request-header: host => www.google.com
+status: Net::HTTPOK 1.1 200 OK
+response-header: date => Tue, 23 Apr 2013 23:53:58 GMT
+response-header: expires => -1
+response-header: cache-control => private, max-age=0
+response-header: content-type => text/html; charset=ISO-8859-1
+response-header: set-cookie => PREF=ID=bce657e5c96bdd73:FF=0:TM=1366761238:LM=1366761238:S=xwAFfUcxTVJzdoRs; expires=Thu, 23-Apr-2015 23:53:58 GMT; path=/; domain=.google.com, NID=67=Jid-HMll8NzpIRXQn7PgucxjM_L3laZwYofwBBsgqL1f8v7EE9-8EAw1kqKmZTh1jSeSOTljmXdiuLg8rUb6XVb97r-XjlhVPIk7OMIDmKAwCBh9P_82TzPqNOLGqyWq; expires=Wed, 23-Oct-2013 23:53:58 GMT; path=/; domain=.google.com; HttpOnly
+response-header: p3p => CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657 for more info."
+response-header: server => gws
+response-header: x-xss-protection => 1; mode=block
+response-header: x-frame-options => SAMEORIGIN
+response-header: transfer-encoding => chunked
+Read 634 bytes (634 total)
+Read 2808 bytes (3442 total)
+Read 6455 bytes (9897 total)
+saved cookie: PREF=ID=bce657e5c96bdd73:FF=0:TM=1366761238:LM=1366761238:S=xwAFfUcxTVJzdoRs
+saved cookie: NID=67=Jid-HMll8NzpIRXQn7PgucxjM_L3laZwYofwBBsgqL1f8v7EE9-8EAw1kqKmZTh1jSeSOTljmXdiuLg8rUb6XVb97r-XjlhVPIk7OMIDmKAwCBh9P_82TzPqNOLGqyWq
+form encoding: ISO-8859-1
+Net::HTTP::Get: /search?tbm=isch&ie=ISO-8859-1&hl=en&source=hp&q=Papaya&gbv=1
+request-header: accept => */*
+request-header: user-agent => Mechanize/2.6.0 Ruby/1.9.3p392 (http://github.com/sparklemotion/mechanize/)
+request-header: accept-encoding => gzip,deflate,identity
+request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+request-header: accept-language => en-us,en;q=0.5
+request-header: cookie => PREF=ID=bce657e5c96bdd73:FF=0:TM=1366761238:LM=1366761238:S=xwAFfUcxTVJzdoRs; NID=67=Jid-HMll8NzpIRXQn7PgucxjM_L3laZwYofwBBsgqL1f8v7EE9-8EAw1kqKmZTh1jSeSOTljmXdiuLg8rUb6XVb97r-XjlhVPIk7OMIDmKAwCBh9P_82TzPqNOLGqyWq
+request-header: host => www.google.com
+request-header: referer => http://www.google.com/imghp?hl=en&tab=ii
+status: Net::HTTPOK 1.1 200 OK
+response-header: date => Tue, 23 Apr 2013 23:53:58 GMT
+response-header: expires => -1
+response-header: cache-control => private, max-age=0
+response-header: content-type => text/html; charset=ISO-8859-1
+response-header: set-cookie => PREF=ID=bce657e5c96bdd73:U=b783261df43708b5:FF=0:TM=1366761238:LM=1366761238:S=qRGpAW9SGqFpHnHw; expires=Thu, 23-Apr-2015 23:53:58 GMT; path=/; domain=.google.com
+response-header: server => gws
+response-header: x-xss-protection => 1; mode=block
+response-header: x-frame-options => SAMEORIGIN
+response-header: transfer-encoding => chunked
+Read 2374 bytes (2374 total)
+Read 5616 bytes (7990 total)
+Read 5430 bytes (13420 total)
+Read 1398 bytes (14818 total)
+Read 1404 bytes (16222 total)
+Read 5616 bytes (21838 total)
+Read 4212 bytes (26050 total)
+Read 2808 bytes (28858 total)
+Read 1404 bytes (30262 total)
+Read 1404 bytes (31666 total)
+Read 1404 bytes (33070 total)
+Read 1404 bytes (34474 total)
+Read 5616 bytes (40090 total)
+Read 941 bytes (41031 total)
+saved cookie: PREF=ID=bce657e5c96bdd73:U=b783261df43708b5:FF=0:TM=1366761238:LM=1366761238:S=qRGpAW9SGqFpHnHw
+Net::HTTP::Get: /images/Papaya%2520Solo%2520.jpeg.jpg
+request-header: accept => */*
+request-header: user-agent => Mechanize/2.6.0 Ruby/1.9.3p392 (http://github.com/sparklemotion/mechanize/)
+request-header: accept-encoding => gzip,deflate,identity
+request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+request-header: accept-language => en-us,en;q=0.5
+request-header: host => www.floridahillnursery.com
+status: Net::HTTPNotFound 1.1 404 Not Found
+response-header: date => Tue, 23 Apr 2013 23:54:00 GMT
+response-header: server => Apache
+response-header: expires => Thu, 19 Nov 1981 08:52:00 GMT
+response-header: cache-control => no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+response-header: pragma => no-cache
+response-header: content-encoding => gzip
+response-header: vary => Accept-Encoding
+response-header: set-cookie => zenid=gap4d89ln4c29eqrt5s3t2l3m3; path=/; domain=.www.floridahillnursery.com; HttpOnly
+response-header: keep-alive => timeout=5, max=100
+response-header: connection => Keep-Alive
+response-header: transfer-encoding => chunked
+response-header: content-type => text/html
+Read 926 bytes (926 total)
+Read 1404 bytes (2330 total)
+Read 1404 bytes (3734 total)
+Read 3027 bytes (6761 total)
+gzip response
+saved cookie: zenid=gap4d89ln4c29eqrt5s3t2l3m3
+Net::HTTP::Get: /wikipedia/commons/0/0b/Carica_papaya_-_papaya_-_var-tropical_dwarf_papaya_-_desc-fruit.jpg
+request-header: accept => */*
+request-header: user-agent => Mechanize/2.6.0 Ruby/1.9.3p392 (http://github.com/sparklemotion/mechanize/)
+request-header: accept-encoding => gzip,deflate,identity
+request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+request-header: accept-language => en-us,en;q=0.5
+request-header: host => upload.wikimedia.org
+status: Net::HTTPOK 1.1 200 OK
+response-header: x-object-meta-sha1base36 => l6hcsqxnzlr6h4xhhn72n8yy5wsigk8
+response-header: last-modified => Thu, 12 Jul 2012 22:04:18 GMT
+response-header: etag => 3dbec9255c63047de6614426173d92b2
+response-header: x-timestamp => 1342130658.83769
+response-header: content-type => image/jpeg
+response-header: x-varnish => 3189513072 3187622109, 386716384
+response-header: via => 1.1 varnish, 1.1 varnish
+response-header: content-length => 148572
+response-header: accept-ranges => bytes
+response-header: date => Tue, 23 Apr 2013 23:54:02 GMT
+response-header: age => 1905
+response-header: connection => keep-alive
+response-header: x-cache => cp1030 hit (5), dysprosium frontend miss (0)
+response-header: access-control-allow-origin => *
+Read 902 bytes (902 total)
+Read 12636 bytes (13538 total)
+Read 1404 bytes (14942 total)
+Read 8424 bytes (23366 total)
+Read 5616 bytes (28982 total)
+Read 1404 bytes (30386 total)
+Read 1404 bytes (31790 total)
+Read 2808 bytes (34598 total)
+Read 1404 bytes (36002 total)
+Read 2808 bytes (38810 total)
+Read 8424 bytes (47234 total)
+Read 7020 bytes (54254 total)
+Read 1404 bytes (55658 total)
+Read 4212 bytes (59870 total)
+Read 4212 bytes (64082 total)
+Read 1404 bytes (65486 total)
+Read 1404 bytes (66890 total)
+Read 1404 bytes (68294 total)
+Read 4212 bytes (72506 total)
+Read 16384 bytes (88890 total)
+Read 3272 bytes (92162 total)
+Read 4212 bytes (96374 total)
+Read 1404 bytes (97778 total)
+Read 2808 bytes (100586 total)
+Read 2808 bytes (103394 total)
+Read 1404 bytes (104798 total)
+Read 7020 bytes (111818 total)
+Read 7020 bytes (118838 total)
+Read 1404 bytes (120242 total)
+Read 2808 bytes (123050 total)
+Read 2808 bytes (125858 total)
+Read 2808 bytes (128666 total)
+Read 2808 bytes (131474 total)
+Read 4212 bytes (135686 total)
+Read 2808 bytes (138494 total)
+Read 2808 bytes (141302 total)
+Read 1404 bytes (142706 total)
+Read 2808 bytes (145514 total)
+Read 1404 bytes (146918 total)
+Read 1654 bytes (148572 total)
+Net::HTTP::Get: /imghp?hl=en&tab=ii
+request-header: accept => */*
+request-header: user-agent => Mechanize/2.6.0 Ruby/1.9.3p392 (http://github.com/sparklemotion/mechanize/)
+request-header: accept-encoding => gzip,deflate,identity
+request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+request-header: accept-language => en-us,en;q=0.5
+request-header: host => www.google.com
+status: Net::HTTPOK 1.1 200 OK
+response-header: date => Tue, 23 Apr 2013 23:54:02 GMT
+response-header: expires => -1
+response-header: cache-control => private, max-age=0
+response-header: content-type => text/html; charset=ISO-8859-1
+response-header: set-cookie => PREF=ID=d3aeccdc4d417381:FF=0:TM=1366761242:LM=1366761242:S=lEhp5rhjxOEvS8Kf; expires=Thu, 23-Apr-2015 23:54:02 GMT; path=/; domain=.google.com, NID=67=cZcLu3u5JmHuQG3f8fndK15vRp-C5E8PTFM8Mu7S1hBSqi1Ii9WXqIPaBUXirM1EZ5yh4mHSpo7ukJ7qOLn4ORTxsiTATCkhVF05aULRrX8Hm06F8IDs24nEcpXKcVF2; expires=Wed, 23-Oct-2013 23:54:02 GMT; path=/; domain=.google.com; HttpOnly
+response-header: p3p => CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657 for more info."
+response-header: server => gws
+response-header: x-xss-protection => 1; mode=block
+response-header: x-frame-options => SAMEORIGIN
+response-header: transfer-encoding => chunked
+Read 6250 bytes (6250 total)
+Read 3695 bytes (9945 total)
+saved cookie: PREF=ID=d3aeccdc4d417381:FF=0:TM=1366761242:LM=1366761242:S=lEhp5rhjxOEvS8Kf
+saved cookie: NID=67=cZcLu3u5JmHuQG3f8fndK15vRp-C5E8PTFM8Mu7S1hBSqi1Ii9WXqIPaBUXirM1EZ5yh4mHSpo7ukJ7qOLn4ORTxsiTATCkhVF05aULRrX8Hm06F8IDs24nEcpXKcVF2
+form encoding: ISO-8859-1
+Net::HTTP::Get: /search?tbm=isch&ie=ISO-8859-1&hl=en&source=hp&q=Papaya&gbv=1
+request-header: accept => */*
+request-header: user-agent => Mechanize/2.6.0 Ruby/1.9.3p392 (http://github.com/sparklemotion/mechanize/)
+request-header: accept-encoding => gzip,deflate,identity
+request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+request-header: accept-language => en-us,en;q=0.5
+request-header: cookie => PREF=ID=d3aeccdc4d417381:FF=0:TM=1366761242:LM=1366761242:S=lEhp5rhjxOEvS8Kf; NID=67=cZcLu3u5JmHuQG3f8fndK15vRp-C5E8PTFM8Mu7S1hBSqi1Ii9WXqIPaBUXirM1EZ5yh4mHSpo7ukJ7qOLn4ORTxsiTATCkhVF05aULRrX8Hm06F8IDs24nEcpXKcVF2
+request-header: host => www.google.com
+request-header: referer => http://www.google.com/imghp?hl=en&tab=ii
+status: Net::HTTPOK 1.1 200 OK
+response-header: date => Tue, 23 Apr 2013 23:54:02 GMT
+response-header: expires => -1
+response-header: cache-control => private, max-age=0
+response-header: content-type => text/html; charset=ISO-8859-1
+response-header: set-cookie => PREF=ID=d3aeccdc4d417381:U=59ed78ad5386304f:FF=0:TM=1366761242:LM=1366761242:S=HuiJHjzTSt5yPOil; expires=Thu, 23-Apr-2015 23:54:02 GMT; path=/; domain=.google.com
+response-header: server => gws
+response-header: x-xss-protection => 1; mode=block
+response-header: x-frame-options => SAMEORIGIN
+response-header: transfer-encoding => chunked
+Read 2374 bytes (2374 total)
+Read 5616 bytes (7990 total)
+Read 4212 bytes (12202 total)
+Read 1218 bytes (13420 total)
+Read 1398 bytes (14818 total)
+Read 2808 bytes (17626 total)
+Read 2808 bytes (20434 total)
+Read 8424 bytes (28858 total)
+Read 12173 bytes (41031 total)
+saved cookie: PREF=ID=d3aeccdc4d417381:U=59ed78ad5386304f:FF=0:TM=1366761242:LM=1366761242:S=HuiJHjzTSt5yPOil
+Net::HTTP::Get: /images/Papaya%2520Solo%2520.jpeg.jpg
+request-header: accept => */*
+request-header: user-agent => Mechanize/2.6.0 Ruby/1.9.3p392 (http://github.com/sparklemotion/mechanize/)
+request-header: accept-encoding => gzip,deflate,identity
+request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+request-header: accept-language => en-us,en;q=0.5
+request-header: host => www.floridahillnursery.com
+status: Net::HTTPNotFound 1.1 404 Not Found
+response-header: date => Tue, 23 Apr 2013 23:54:02 GMT
+response-header: server => Apache
+response-header: expires => Thu, 19 Nov 1981 08:52:00 GMT
+response-header: cache-control => no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+response-header: pragma => no-cache
+response-header: content-encoding => gzip
+response-header: vary => Accept-Encoding
+response-header: set-cookie => zenid=qema1vsjpvsd71rolngrjn8m70; path=/; domain=.www.floridahillnursery.com; HttpOnly
+response-header: keep-alive => timeout=5, max=99
+response-header: connection => Keep-Alive
+response-header: transfer-encoding => chunked
+response-header: content-type => text/html
+Read 927 bytes (927 total)
+Read 5874 bytes (6801 total)
+gzip response
+saved cookie: zenid=qema1vsjpvsd71rolngrjn8m70
+Net::HTTP::Get: /wikipedia/commons/0/0b/Carica_papaya_-_papaya_-_var-tropical_dwarf_papaya_-_desc-fruit.jpg
+request-header: accept => */*
+request-header: user-agent => Mechanize/2.6.0 Ruby/1.9.3p392 (http://github.com/sparklemotion/mechanize/)
+request-header: accept-encoding => gzip,deflate,identity
+request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+request-header: accept-language => en-us,en;q=0.5
+request-header: host => upload.wikimedia.org
+status: Net::HTTPOK 1.1 200 OK
+response-header: x-object-meta-sha1base36 => l6hcsqxnzlr6h4xhhn72n8yy5wsigk8
+response-header: last-modified => Thu, 12 Jul 2012 22:04:18 GMT
+response-header: etag => 3dbec9255c63047de6614426173d92b2
+response-header: x-timestamp => 1342130658.83769
+response-header: content-type => image/jpeg
+response-header: x-varnish => 3189513072 3187622109, 386732473 386716384
+response-header: via => 1.1 varnish, 1.1 varnish
+response-header: content-length => 148572
+response-header: accept-ranges => bytes
+response-header: date => Tue, 23 Apr 2013 23:54:03 GMT
+response-header: age => 1906
+response-header: connection => keep-alive
+response-header: x-cache => cp1030 hit (5), dysprosium frontend hit (1)
+response-header: access-control-allow-origin => *
+Read 893 bytes (893 total)
+Read 2808 bytes (3701 total)
+Read 7020 bytes (10721 total)
+Read 2808 bytes (13529 total)
+Read 5616 bytes (19145 total)
+Read 11232 bytes (30377 total)
+Read 16384 bytes (46761 total)
+Read 11696 bytes (58457 total)
+Read 5616 bytes (64073 total)
+Read 1404 bytes (65477 total)
+Read 2808 bytes (68285 total)
+Read 1404 bytes (69689 total)
+Read 5616 bytes (75305 total)
+Read 2808 bytes (78113 total)
+Read 5616 bytes (83729 total)
+Read 7020 bytes (90749 total)
+Read 1404 bytes (92153 total)
+Read 1404 bytes (93557 total)
+Read 7020 bytes (100577 total)
+Read 1404 bytes (101981 total)
+Read 1404 bytes (103385 total)
+Read 5616 bytes (109001 total)
+Read 5616 bytes (114617 total)
+Read 1404 bytes (116021 total)
+Read 11232 bytes (127253 total)
+Read 1404 bytes (128657 total)
+Read 1404 bytes (130061 total)
+Read 7020 bytes (137081 total)
+Read 4212 bytes (141293 total)
+Read 7279 bytes (148572 total)

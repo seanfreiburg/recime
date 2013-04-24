@@ -1,0 +1,2 @@
+module IngredientShoppingListsHelper
+end

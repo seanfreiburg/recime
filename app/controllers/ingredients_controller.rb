@@ -31,7 +31,9 @@ class IngredientsController < ApplicationController
     @ingredient.name = params[:name]
     @ingredient.picture = image_search(params[:name])
     existing_ingredient = Ingredient.find_by_name(params[:name])
-    if !existing_ingredient.nil?
+    if existing_ingredient.nil?
+      @ingredient.picture = image_search(params[:name])
+    else
       @ingredient = existing_ingredient
     end
     @ingredient.save
@@ -61,7 +63,9 @@ class IngredientsController < ApplicationController
     @ingredient.name = params[:name]
     @ingredient.picture = image_search(params[:name])
     existing_ingredient = Ingredient.find_by_name(params[:name])
-    if !existing_ingredient.nil?
+    if existing_ingredient.nil?
+      @ingredient.picture = image_search(params[:name])
+    else
       @ingredient = existing_ingredient
     end
     @ingredient.save
@@ -87,9 +91,11 @@ class IngredientsController < ApplicationController
   def create_ingredient_shopping_list
     @ingredient = Ingredient.new
     @ingredient.name = params[:name]
-    @ingredient.picture = image_search(params[:name])
+
     existing_ingredient = Ingredient.find_by_name(params[:name])
-    if !existing_ingredient.nil?
+    if existing_ingredient.nil?
+      @ingredient.picture = image_search(params[:name])
+    else
       @ingredient = existing_ingredient
     end
     @ingredient.save
