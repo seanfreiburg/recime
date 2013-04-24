@@ -7,4 +7,5 @@ class ShoppingList < ActiveRecord::Base
 
   has_many :ingredients, :through => :ingredient_shopping_lists
   has_many :ingredient_shopping_lists
+
 end

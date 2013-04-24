@@ -68,7 +68,6 @@ class UsersController < ApplicationController
     end
 
     @recipes = @recipes.uniq
-
   end
 
   def recipes_exp
@@ -87,7 +86,11 @@ class UsersController < ApplicationController
       end
     end
     @recipes = @recipes.uniq
+
+
   end
+
+
 
   private
 

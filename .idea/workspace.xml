@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ingredients/new_ingredient_user.html.erb" afterPath="$PROJECT_DIR$/app/views/ingredients/new_ingredient_user.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/recipe.rb" afterPath="$PROJECT_DIR$/app/models/recipe.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/recipes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/recipes_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/shopping_list.rb" afterPath="$PROJECT_DIR$/app/models/shopping_list.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/recipes/show.html.erb" afterPath="$PROJECT_DIR$/app/views/recipes/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shopping_lists/show.html.erb" afterPath="$PROJECT_DIR$/app/views/shopping_lists/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sql.iws" />
@@ -14,16 +19,16 @@
     <file path="/_footer.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366684798111" ignored="false" />
     <file path="/_header.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366663345584" ignored="false" />
     <file path="/user.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366575883204" ignored="false" />
-    <file path="/recipe.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366579378621" ignored="false" />
-    <file path="/recipes_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366662655800" ignored="false" />
-    <file path="/routes.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366764423165" ignored="false" />
-    <file path="/show.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366767406413" ignored="false" />
-    <file path="/users_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366668652165" ignored="false" />
+    <file path="/recipe.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366771957709" ignored="false" />
+    <file path="/recipes_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366774199351" ignored="false" />
+    <file path="/routes.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366772904948" ignored="false" />
+    <file path="/show.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366774111115" ignored="false" />
+    <file path="/users_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366770541291" ignored="false" />
     <file path="/_recipes.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366344792966" ignored="false" />
     <file path="/_recipe_form.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366346534313" ignored="false" />
     <file path="/static_pages_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366684707727" ignored="false" />
     <file path="/_recipe.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366346436722" ignored="false" />
-    <file path="/shopping_list.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366681208536" ignored="false" />
+    <file path="/shopping_list.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366773047545" ignored="false" />
     <file path="/shopping_lists_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366682266564" ignored="false" />
     <file path="/_shopping_list_form.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366349396710" ignored="false" />
     <file path="/ingredient_user.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366659690870" ignored="false" />
@@ -37,11 +42,11 @@
     <file path="/README.md" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366574735881" ignored="false" />
     <file path="/new_ingredient_recipe.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366579872580" ignored="false" />
     <file path="/ingredient_recipe.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366582459886" ignored="false" />
-    <file path="/seeds.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366682996331" ignored="false" />
+    <file path="/seeds.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366771050847" ignored="false" />
     <file path="/application.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366658192190" ignored="false" />
     <file path="/20130422192807_add_exp_date_to_user_ingredient.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366658951963" ignored="false" />
     <file path="/index.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366663478761" ignored="false" />
-    <file path="/recipes_possible.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366753910206" ignored="false" />
+    <file path="/recipes_possible.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366769770013" ignored="false" />
     <file path="/recipes_exp.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366668471085" ignored="false" />
     <file path="/ingredient_users_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366669071952" ignored="false" />
     <file path="/ingredient_shopping_list.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366681235113" ignored="false" />
@@ -51,6 +56,9 @@
     <file path="/ingredient_shopping_lists_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366764344596" ignored="false" />
     <file path="/ingredient_recipes_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366763396700" ignored="false" />
     <file path="/destroy.html.erb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366763746869" ignored="false" />
+    <file path="/review.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366773227581" ignored="false" />
+    <file path="/reviews_controller.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366773366962" ignored="false" />
+    <file path="/20130424031423_add_user_id_to_reviews.rb" changelist="e4d04755-14e1-4b4c-b0a4-351ee2a03cd0" time="1366773315709" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +78,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/recipes/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="24" selection-start="579" selection-end="579" vertical-scroll-proportion="0.48184356">
+            <state line="11" column="11" selection-start="237" selection-end="237" vertical-scroll-proportion="-6.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recipes_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/recipes_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="16" selection-start="461" selection-end="461" vertical-scroll-proportion="0.3984064">
               <folding />
             </state>
           </provider>
@@ -97,22 +114,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/report.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/recipes_possible.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/recipes_exp.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/ingredients_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/ingredient_recipes/destroy.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/ingredient_recipes_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/ingredient_shopping_lists_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/recipes/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shopping_lists/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/ingredients/new_ingredient_user.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/recipes_possible.html.erb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/recipe.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/models/shopping_list.rb" />
+        <option value="$PROJECT_DIR$/app/models/review.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130424031423_add_user_id_to_reviews.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/recipes/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/recipes_controller.rb" />
       </list>
     </option>
   </component>
@@ -163,6 +180,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,50 +375,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingredients" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="ingredient_recipes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -439,46 +444,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -837,100 +802,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/users/recipes_exp.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="41" selection-start="147" selection-end="147" vertical-scroll-proportion="0.10288066">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/recipes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="3" selection-start="2003" selection-end="2003" vertical-scroll-proportion="1.2191235">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="219" selection-end="219" vertical-scroll-proportion="-0.13545817">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ingredients_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="7" selection-start="915" selection-end="915" vertical-scroll-proportion="0.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ingredient_users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="76" selection-end="175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ingredients/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ingredient_recipes/destroy.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="72" selection-start="210" selection-end="210" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ingredient_recipes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="35" selection-start="245" selection-end="245" vertical-scroll-proportion="0.07968128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ingredient_shopping_lists_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="76" selection-start="202" selection-end="202" vertical-scroll-proportion="0.059760958">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="41" selection-start="147" selection-end="147" vertical-scroll-proportion="0.03984064">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/recipes/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="125" selection-end="160" vertical-scroll-proportion="0.14403293">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shopping_lists/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="355" selection-start="703" selection-end="703" vertical-scroll-proportion="0.35614526">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="228" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.5656425">
           <folding />
         </state>
       </provider>
@@ -942,9 +816,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/recipes_possible.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="92" selection-start="167" selection-end="167" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="49" selection-start="369" selection-end="369" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ingredient.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="9" selection-start="104" selection-end="1145" vertical-scroll-proportion="0.07968128">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/recipe.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="3" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="4" selection-start="2029" selection-end="2029" vertical-scroll-proportion="1.7729083">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="38" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="3" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.43824703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/shopping_list.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="235" selection-end="235" vertical-scroll-proportion="0.17928287">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/review.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="51" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130424031423_add_user_id_to_reviews.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="45" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="25" selection-start="320" selection-end="320" vertical-scroll-proportion="0.119521916">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/recipes/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="24" selection-start="579" selection-end="579" vertical-scroll-proportion="0.48184356">
+        <state line="11" column="11" selection-start="237" selection-end="237" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/recipes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="16" selection-start="461" selection-end="461" vertical-scroll-proportion="0.3984064">
           <folding />
         </state>
       </provider>

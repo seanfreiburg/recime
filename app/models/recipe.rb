@@ -7,4 +7,5 @@ class Recipe < ActiveRecord::Base
 
   has_many :ingredients, :through => :ingredient_recipes
   has_many :ingredient_recipes, dependent:  :destroy
+  has_many :reviews, dependent: :destroy
 end

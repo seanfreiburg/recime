@@ -7,7 +7,9 @@
   <h3> Directions: </h3>
 
   <p><%= @recipe.description %></p>
-
+          <br>
+  <h3>Average Rating: <%= @mean %></h3>
+       <br>
 
 
   <% if @ingredients %>
@@ -31,11 +33,31 @@
 
       </ol>
   <% end %>
+
+  <br><br>
+
+
+  <% if @reviews %>
+      <% x =0 %>
+      <div class="pull-right span12">
+     <h3>Reviews</h3>
+      <% for review in @reviews %>
+
+             <h4> <%= x = x+1 %> . </h4> <p>Rating: <%= review.rating %></p>
+
+             <p>Description: </p>
+             <p><%= review.description %></p>
+      <% end %>
+
+      </div>
+  <% end %>
+
+
   <% if current_user?(@recipe.user) %>
       <h1>Add Ingredient</h1>
 
 
-      <%= form_tag("/ingredients/create_ingredient_recipe", :method => "post") do %>
+
           <p>
             Name:
             <%= text_field_tag :name %>
@@ -51,4 +73,18 @@
           </p>
       <% end %>
 
-  <% end %>
+
+
+
+<h1>Add Review</h1>
+
+<%= form_tag("/create_review", :method => "post") do %>
+    <p>Rating</p>
+    <%= text_field_tag :rating%>
+    <p>Description</p>
+    <%= text_area_tag :description %>
+      <%= hidden_field_tag 'id', params[:id] %>
+    <%= submit_tag 'Create' %>
+
+
+<% end %>
