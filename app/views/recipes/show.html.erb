@@ -1,10 +1,12 @@
-
-
-
 <h1><%= @recipe.name %></h1>
 <div class="span12">
-<h3>Prep Time: </h3><p><%= @recipe.prep_time %></p>
-<h3> Directions: </h3><p><%= @recipe.description%></p>
+  <h3>Prep Time: </h3>
+
+  <p><%= @recipe.prep_time %></p>
+
+  <h3> Directions: </h3>
+
+  <p><%= @recipe.description %></p>
 
 
 
@@ -18,32 +20,35 @@
               <p><%= image_tag(ingredient.picture, :size => "50x50") %></p>
 
               <p><%= ingredient.name %>,
-                Amount: <%= @recipe.ingredient_recipes.find_by_ingredient_id(ingredient.id).amount %>  <%= link_to 'Delete', ingredient_recipe_path(@recipe,:ingredient_id => ingredient.id  ), :method => :post , :class => 'btn btn-danger', :confirm => "Are you sure?" %> </p> </p>
-            </li>
+                Amount: <%= @recipe.ingredient_recipes.find_by_ingredient_id(ingredient.id).amount %>
+                <% if current_user?(@recipe.user) %>
+                    <%= link_to 'Delete', ingredient_recipe_path(@recipe, :ingredient_id => ingredient.id), :method => :post, :class => 'btn btn-danger', :confirm => "Are you sure?" %> </p>
+                <% end %>
+                </li>
 
 
         <% end %>
 
       </ol>
   <% end %>
-
-<h1>Add Ingredient</h1>
-
-
-    <%= form_tag("/ingredients/create_ingredient_recipe", :method => "post") do %>
-        <p>
-        Name:
-        <%= text_field_tag  :name %>
-        </p>
-
-    <p>
-      Amount
-      <%= text_field_tag :amount %>
-    </p>
-    <%= hidden_field_tag 'id', params[:id] %>
-    <p>
-      <%= submit_tag 'Create' %>
-    </p>
-    <% end %>
+  <% if current_user?(@recipe.user) %>
+      <h1>Add Ingredient</h1>
 
 
+      <%= form_tag("/ingredients/create_ingredient_recipe", :method => "post") do %>
+          <p>
+            Name:
+            <%= text_field_tag :name %>
+          </p>
+
+          <p>
+            Amount
+            <%= text_field_tag :amount %>
+          </p>
+          <%= hidden_field_tag 'id', params[:id] %>
+          <p>
+            <%= submit_tag 'Create' %>
+          </p>
+      <% end %>
+
+  <% end %>
