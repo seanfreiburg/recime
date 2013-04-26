@@ -72,12 +72,14 @@
 
 <h2>Explain one basic function</h2>
 <p>
-
+  One of the functions that our site offers is the ability to create and manage shopping lists.  Creating a shopping list is very simple, and can be done from the user's home page.  They simply enter the shopping list name into the input, and click the button.  Our code then adds a shopping list with the entered name and the user's user id, with a unique identifier, into the shopping_lists relation in our database.
 </p>
 
 <h2>Show the actual SQL code snippet</h2>
 <p>
-
+  <code>
+    INSERT INTO shopping_lists (name, user_id, created_at, updated_at) VALUES (name_entered_in_form, current_user_id, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+  </code>
 </p>
 
 <h2>List and briefly explain the dataflow, i.e. the steps that occur between a user entering the data on the screen and the output that occurs (you can insert a set of screenshots)</h2>

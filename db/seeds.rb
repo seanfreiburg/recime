@@ -72,6 +72,14 @@ Ingredient.create(name:'Cheese', picture: image_search('Cheese') )
 
 
 @users = User.all
+@ingredients = Ingredient.all
+
+
+for user in @users
+  for ingredient in @ingredients
+    IngredientUser.new(:user_id => user.id, :ingredient_id => ingredient.id, :amount => rand(1..10), :exp_date => Date.today + rand(1..45))
+  end
+end
 
 
 
