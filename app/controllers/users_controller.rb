@@ -70,7 +70,6 @@ class UsersController < ApplicationController
         end
       end
     end
-
     @recipes = @recipes.uniq
   end
 
@@ -95,7 +94,7 @@ class UsersController < ApplicationController
               bool =0
             end
           end
-          if bool ==1
+          if bool == 1
             @recipes.append(recipe)
           end
         end

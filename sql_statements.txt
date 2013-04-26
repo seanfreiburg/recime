@@ -1,0 +1,109 @@
+ # user create
+
+   (0.1ms)  begin transaction
+  User Exists (0.2ms)  SELECT 1 AS one FROM "users" WHERE "users"."name" = 'Sean E Freiburg' LIMIT 1
+  User Exists (0.1ms)  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('frycicle1@gmail.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  SQL (1.7ms)  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", false], ["created_at", Fri, 26 Apr 2013 02:06:04 UTC +00:00], ["email", "frycicle1@gmail.com"], ["name", "Sean E Freiburg"], ["password_digest", "$2a$10$c4hh1SauNtedyF9pzzjun.lRlZfcI9bQ7h//Z4PCNcs.u5.vSHj42"], ["remember_token", "vMz1XTt7NvyTHn0d-hPe8w"], ["updated_at", Fri, 26 Apr 2013 02:06:04 UTC +00:00]]
+   (1.9ms)  commit transaction
+
+
+# user destroy 
+
+ (0.1ms)  begin transaction
+  Recipe Load (0.2ms)  SELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = 16
+  ShoppingList Load (0.2ms)  SELECT "shopping_lists".* FROM "shopping_lists" WHERE "shopping_lists"."user_id" = 16
+  SQL (0.2ms)  DELETE FROM "shopping_lists" WHERE "shopping_lists"."id" = ?  [["id", 6]]
+  IngredientUser Load (0.1ms)  SELECT "ingredient_users".* FROM "ingredient_users" WHERE "ingredient_users"."user_id" = 16
+  SQL (0.1ms)  DELETE FROM "ingredient_users" WHERE "ingredient_users"."id" = ?  [["id", 28]]
+  SQL (0.0ms)  DELETE FROM "ingredient_users" WHERE "ingredient_users"."id" = ?  [["id", 29]]
+  SQL (0.0ms)  DELETE FROM "ingredient_users" WHERE "ingredient_users"."id" = ?  [["id", 30]]
+  SQL (0.2ms)  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 16]]
+   (1.6ms)  commit transaction
+
+# user select
+  User Load (0.3ms)  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+=> #<User id: 1, name: "Sean Freiburg", email: "frycicle@gmail.com", created_at: "2013-04-23 02:23:06", updated_at: "2013-04-23 02:23:06", password_digest: "$2a$10$axiOplpfO0iYKubhhawHhuQN/HauSglmUw0vGO4Ee.3H...", remember_token: "hJ_6BNyk2df44QQZvgoh7Q", admin: false>
+
+##########################################################################
+
+# ingredient create
+
+(0.0ms)  begin transaction
+  SQL (0.4ms)  INSERT INTO "ingredients" ("created_at", "name", "picture", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Fri, 26 Apr 2013 02:09:39 UTC +00:00], ["name", "Bread"], ["picture", "blah.jpg"], ["updated_at", Fri, 26 Apr 2013 02:09:39 UTC +00:00]]
+   (1.9ms)  commit transaction
+
+# ingredient select all
+Ingredient Load (0.2ms)  SELECT "ingredients".* FROM "ingredients" INNER JOIN "ingredient_users" ON "ingredients"."id" = "ingredient_users"."ingredient_id" WHERE "ingredient_users"."user_id" = 16
+
+# ingredient delete
+(0.1ms)  begin transaction
+  IngredientUser Load (0.2ms)  SELECT "ingredient_users".* FROM "ingredient_users" WHERE "ingredient_users"."ingredient_id" = 3
+  IngredientRecipe Load (0.1ms)  SELECT "ingredient_recipes".* FROM "ingredient_recipes" WHERE "ingredient_recipes"."ingredient_id" = 3
+  SQL (0.2ms)  DELETE FROM "ingredient_recipes" WHERE "ingredient_recipes"."id" = ?  [["id", 9]]
+  SQL (0.1ms)  DELETE FROM "ingredients" WHERE "ingredients"."id" = ?  [["id", 3]]
+   (1.5ms)  commit transaction
+
+###########################################################################
+
+# shopping list create
+
+(0.1ms)  begin transaction
+  SQL (0.4ms)  INSERT INTO "shopping_lists" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 26 Apr 2013 02:11:18 UTC +00:00], ["name", "ListBlah"], ["updated_at", Fri, 26 Apr 2013 02:11:18 UTC +00:00], ["user_id", 1]]
+   (1.2ms)  commit transaction
+
+# shopping list delete
+(0.1ms)  begin transaction
+  SQL (0.2ms)  DELETE FROM "shopping_lists" WHERE "shopping_lists"."id" = ?  [["id", 1]]
+   (1.6ms)  commit transaction
+
+# shopping list select
+ShoppingList Load (0.2ms)  SELECT "shopping_lists".* FROM "shopping_lists" LIMIT 1
+=> #<ShoppingList id: 2, name: "Cesar's First List!", user_id: 11, created_at: "2013-04-26 01:21:33", updated_at: "2013-04-26 01:21:33">
+
+###########################################################################
+
+# recipe create
+
+(0.1ms)  begin transaction
+  SQL (0.5ms)  INSERT INTO "recipes" ("created_at", "description", "name", "prep_time", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 26 Apr 2013 02:15:27 UTC +00:00], ["description", "blahblah"], ["name", "ListBlah"], ["prep_time", 25], ["updated_at", Fri, 26 Apr 2013 02:15:27 UTC +00:00], ["user_id", 1]]
+   (1.8ms)  commit transaction
+
+# recipe destroy
+(0.1ms)  begin transaction
+  IngredientRecipe Load (0.1ms)  SELECT "ingredient_recipes".* FROM "ingredient_recipes" WHERE "ingredient_recipes"."recipe_id" = 13
+  Review Load (0.1ms)  SELECT "reviews".* FROM "reviews" WHERE "reviews"."recipe_id" = 13
+  SQL (0.2ms)  DELETE FROM "recipes" WHERE "recipes"."id" = ?  [["id", 13]]
+   (1.9ms)  commit transaction
+
+
+# recipe select
+  Recipe Load (0.2ms)  SELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 1 LIMIT 1
+ => #<Recipe id: 1, name: "Mac and Cheese", prep_time: 23, description: "Preheat oven to 350 degrees F.\r\n\r\nIn a large pot of...", user_id: 1, created_at: "2013-04-22 20:24:37", updated_at: "2013-04-22 20:24:37"> 
+
+##########################################################################
+
+
+# recipes possible
+  User Load (0.3ms)  SELECT "users".* FROM "users" LIMIT 1
+=> #<User id: 1, name: "Sean Freiburg", email: "frycicle@gmail.com", created_at: "2013-04-23 02:23:06", updated_at: "2013-04-23 02:23:06", password_digest: "$2a$10$axiOplpfO0iYKubhhawHhuQN/HauSglmUw0vGO4Ee.3H...", remember_token: "hJ_6BNyk2df44QQZvgoh7Q", admin: false>
+irb(main):003:0> User.first.ingredients.all(:joins => [:ingredient_recipes])
+  User Load (0.3ms)  SELECT "users".* FROM "users" LIMIT 1
+  Ingredient Load (0.4ms)  SELECT "ingredients".* FROM "ingredients" INNER JOIN "ingredient_recipes" ON "ingredient_recipes"."ingredient_id" = "ingredients"."id" INNER JOIN "ingredient_users" ON "ingredients"."id" = "ingredient_users"."ingredient_id" WHERE "ingredient_users"."user_id" = 1
+
+Recipe Load (0.3ms)  SELECT "recipes".* FROM "recipes" 
+
+##########################################################################
+# recipes expiring
+
+ User Load (0.3ms)  SELECT "users".* FROM "users" LIMIT 1
+=> #<User id: 1, name: "Sean Freiburg", email: "frycicle@gmail.com", created_at: "2013-04-23 02:23:06", updated_at: "2013-04-23 02:23:06", password_digest: "$2a$10$axiOplpfO0iYKubhhawHhuQN/HauSglmUw0vGO4Ee.3H...", remember_token: "hJ_6BNyk2df44QQZvgoh7Q", admin: false>
+irb(main):003:0> User.first.ingredients.all(:joins => [:ingredient_recipes])
+  User Load (0.3ms)  SELECT "users".* FROM "users" LIMIT 1
+  Ingredient Load (0.4ms)  SELECT "ingredients".* FROM "ingredients" INNER JOIN "ingredient_recipes" ON "ingredient_recipes"."ingredient_id" = "ingredients"."id" INNER JOIN "ingredient_users" ON "ingredients"."id" = "ingredient_users"."ingredient_id" WHERE "ingredient_users"."user_id" = 1
+
+Recipe Load (0.3ms)  SELECT "recipes".* FROM "recipes"
+
+
+
+
