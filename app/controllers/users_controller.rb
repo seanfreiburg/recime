@@ -54,15 +54,19 @@ class UsersController < ApplicationController
     @ings = current_user.ingredients.all(:joins => [:ingredient_recipes])
     @recipes_list = Recipe.all
     @recipes = Array.new
+    @recipes = Array.new
     for ing in @ings
       for recipe in @recipes_list
         if recipe.ingredients.include?(ing)
+          bool = 1
           for ring in recipe.ingredients
-            if @ings.include?(ring)
-              @recipes.append(recipe)
+            if !@ings.include?(ring)
+              bool =0
             end
           end
-
+          if bool ==1
+            @recipes.append(recipe)
+          end
         end
       end
     end
@@ -85,10 +89,14 @@ class UsersController < ApplicationController
     for ing in @ings
       for recipe in @recipes_list
         if recipe.ingredients.include?(ing)
+          bool = 1
           for ring in recipe.ingredients
-            if @ings.include?(ring)
-              @recipes.append(recipe)
+            if !@ings.include?(ring)
+              bool =0
             end
+          end
+          if bool ==1
+            @recipes.append(recipe)
           end
         end
       end
